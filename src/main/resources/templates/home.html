@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <div class="container">
+                <a class="navbar-brand" href="#" th:href="@{/registration}"> Register now !</a>
+                <span class="navbar-brand" >
+                    <a style="color:whitesmoke" th:href="@{/logout}">Logout</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container" style="margin-top:150px">
+        <h1>HOME PAGE</h1>
+        <p><em>This app created by CEM TUNC AKSUNA using Spring Security , Thymeleaf , Hibernate and MySQL
+            Database </em></p>
+
+     <!--   <div sec:isAuthenticated()>
+           <em></em>Click for <a th:href="@{/logout}">Logout</a>
+        </div>-->
+    </div>
+
+
+</div>
+</body>
+</html>

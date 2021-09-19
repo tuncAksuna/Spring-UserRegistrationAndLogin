@@ -2,7 +2,6 @@ package com.example.registrationlogin.config;
 
 import com.example.registrationlogin.service.UserService;
 import lombok.AllArgsConstructor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -41,7 +40,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     }
 
-    public DaoAuthenticationProvider authenticationProvider(){
+    public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider auth = new DaoAuthenticationProvider();
         auth.setUserDetailsService(userService);
         auth.setPasswordEncoder(bCryptPasswordEncoder);

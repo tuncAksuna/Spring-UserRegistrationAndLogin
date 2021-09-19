@@ -5,7 +5,6 @@ import com.example.registrationlogin.model.User;
 import com.example.registrationlogin.repository.UserRepository;
 import com.example.registrationlogin.web.dto.UserRegistrationDto;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
